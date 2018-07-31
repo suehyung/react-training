@@ -114,7 +114,7 @@ class Popular extends React.Component {
           : <RepoGrid repos = {this.state.repos} />}
       </div>
     )
-  // ternary operator above ensures that RepoGrid component only renders once API fetch is complete, otherwise error bc repos prop is undefined
+  // ternary operator above ensures that RepoGrid only renders once API fetch is complete, otherwise get loading msg while repos prop is undefined
   }
 }
 
